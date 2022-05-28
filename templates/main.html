@@ -16,9 +16,9 @@
   </head>
   <body>
     {% include 'navbar.html' %} {% if messages %}
-    <ul class="messages">
+    <div class="messages">
       {% for message in messages %} {{ message }} {% endfor %}
-    </ul>
+    </div>
     {% endif %} {% block content %} {% endblock %} {% include 'footer.html' %}
     <script src="https://www.youtube.com/player_api"></script>
     <script
