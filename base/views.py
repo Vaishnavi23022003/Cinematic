@@ -229,14 +229,19 @@ def register_user(request):
     if request.method == 'POST':
         username = request.POST.get('username').lower()
         password = request.POST.get('password')
-        user = User(username=username, password=password)
-        user.username = user.username.lower()
-        customer = Customer(user=user, rated=0, recommendations="")
-        user.save()
-        customer.save()
-        get_popular(user.username)
-        login(request, user)
-        return redirect('home')
+        try:
+            user = User.objects.get(username=username)
+        except:
+            user = User(username=username, password=password)
+            user.username = user.username.lower()
+            customer = Customer(user=user, rated=0, recommendations="")
+            user.save()
+            customer.save()
+            get_popular(user.username)
+            login(request, user)
+            return redirect('home')
+        else:
+            messages.error(request, 'Username not available')
 
     return render(request, 'base/auth.html')
 
