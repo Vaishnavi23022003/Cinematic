@@ -63,17 +63,17 @@ And navigate to `http://127.0.0.1:8000`
 
 ### Screenshots of website
 
-The authentication page.
+The authentication page. </br>
 ![p](https://i.ibb.co/X5cGRC7/p.png)
-The home page -> contains reccomendations
+The home page -> contains reccomendations</br>
 ![p](https://i.ibb.co/Z8cDP0Z/Cinematic-Firefox-Developer-Edition-28-05-2022-20-30-56.png)
-The Movie page
+The Movie page</br>
 ![p](https://i.ibb.co/X4xqwQD/Cinematic-Firefox-Developer-Edition-28-05-2022-20-34-19.png)
-On pressing the trailer button, the trailer of the movie is played
+On pressing the trailer button, the trailer of the movie is played</br>
 ![p](https://i.ibb.co/YRPPKr4/Cinematic-Firefox-Developer-Edition-28-05-2022-20-34-27.png)
-Similar Movies Section
+Similar Movies Section</br>
 ![p](https://i.ibb.co/yFkbDcS/Cinematic-Firefox-Developer-Edition-28-05-2022-20-35-07.png)
-Watch Again Section
+Watch Again Section</br>
 ![p](https://i.ibb.co/CBy0WLv/Cinematic-Firefox-Developer-Edition-28-05-2022-20-35-17.png)
 
 
