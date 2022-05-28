@@ -50,5 +50,6 @@ Once `pip` has finished downloading the dependencies:
 (env)$ django-admin startproject temp
 ```
 
-A temp folder will be created -> we only need this for django `SECRET_KEY`
-Go to temp/temp/settings.py and copy the value of `SECRET_KEY`
+A temp folder will be created -> we only need this for django `SECRET_KEY`.<br />
+Go to temp/temp/settings.py and copy the value of `SECRET_KEY`.<br />
+Now got to ../../Cinematic/Cinematic/settings.py and replace the value of `SECRET_KEY` with the copied one.<br />
