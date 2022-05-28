@@ -64,17 +64,17 @@ And navigate to `http://127.0.0.1:8000`
 ### Screenshots of website
 
 The authentication page. </br>
-![p](https://i.ibb.co/X5cGRC7/p.png)
+![p](https://i.ibb.co/X5cGRC7/p.png)</br></br>
 The home page -> contains reccomendations</br>
-![p](https://i.ibb.co/Z8cDP0Z/Cinematic-Firefox-Developer-Edition-28-05-2022-20-30-56.png)
+![p](https://i.ibb.co/Z8cDP0Z/Cinematic-Firefox-Developer-Edition-28-05-2022-20-30-56.png)</br></br>
 The Movie page</br>
-![p](https://i.ibb.co/X4xqwQD/Cinematic-Firefox-Developer-Edition-28-05-2022-20-34-19.png)
+![p](https://i.ibb.co/X4xqwQD/Cinematic-Firefox-Developer-Edition-28-05-2022-20-34-19.png)</br></br>
 On pressing the trailer button, the trailer of the movie is played</br>
-![p](https://i.ibb.co/YRPPKr4/Cinematic-Firefox-Developer-Edition-28-05-2022-20-34-27.png)
+![p](https://i.ibb.co/YRPPKr4/Cinematic-Firefox-Developer-Edition-28-05-2022-20-34-27.png)</br></br>
 Similar Movies Section</br>
-![p](https://i.ibb.co/yFkbDcS/Cinematic-Firefox-Developer-Edition-28-05-2022-20-35-07.png)
+![p](https://i.ibb.co/yFkbDcS/Cinematic-Firefox-Developer-Edition-28-05-2022-20-35-07.png)</br></br>
 Watch Again Section</br>
-![p](https://i.ibb.co/CBy0WLv/Cinematic-Firefox-Developer-Edition-28-05-2022-20-35-17.png)
+![p](https://i.ibb.co/CBy0WLv/Cinematic-Firefox-Developer-Edition-28-05-2022-20-35-17.png)</br></br>
 
 
 
