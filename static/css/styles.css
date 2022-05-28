@@ -477,10 +477,8 @@ input:-internal-autofill-selected {
 /* -------------------------------MESSAGE------------------------------------------------------ */
 
 .messages {
-  position: absolute;
-  top: 100px;
-  left: 100px;
-  padding: 30rem;
+  text-align:center;
+  margin:15rem;
 }
 
 /* -----------------------------MEDIA QUERIES------------------------------------------------- */
