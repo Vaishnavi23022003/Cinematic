@@ -62,16 +62,16 @@ Now:
 And navigate to `http://127.0.0.1:8000`
 
 ### Features
-1. **Recommendation** When a user logins to the website, the following happens:<br />
+1. **Recommendation** : When a user logins to the website, the following happens:<br />
   * if the user has rated more than 20 movies
     *  the app recommends movie using [user based collborative filtering](https://www.geeksforgeeks.org/user-based-collaborative-filtering/)
   * else
-    * the app recommends movie using [popularity based filtering](https://www.analyticssteps.com/blogs/what-are-recommendation-systems-machine-learning)
-2. **Search** In the home page the user can search movies and movies with similar names will appear.
-3. **Movie** When user clicks on a movie it loads the page for that movie which contains details ragarding that movie.
-4. **Similar Movies** The movie page also contains movies similar to the selected movie based on genre using [content based filtering](https://www.educative.io/edpresso/what-is-content-based-filtering)
-5. **Trailer** When user clicks on the trailer button the app plays the trailer of that movie.
-6. **Watch Again** A lot of times users like to watch movies again. So the app also has a Watch Again section <br/> where the movies are displayed in a sorted order on the basis of the rating given by the user in reverse order.
+    * the app recommends movie using [popularity based filtering](https://www.analyticssteps.com/blogs/what-are-recommendation-systems-machine-learning)<br /><br />
+2. **Search** : In the home page the user can search movies and movies with similar names will appear.<br /><br />
+3. **Movie** : When user clicks on a movie it loads the page for that movie which contains details ragarding that movie.<br /><br />
+4. **Similar Movies** : The movie page also contains movies similar to the selected movie based on genre using [content based filtering](https://www.educative.io/edpresso/what-is-content-based-filtering)<br /><br />
+5. **Trailer** : When user clicks on the trailer button the app plays the trailer of that movie.<br /><br />
+6. **Watch Again** : A lot of times users like to watch movies again. So the app also has a Watch Again section <br/> where the movies are displayed in a sorted order on the basis of the rating given by the user in reverse order.<br /><br />
 
 ### Screenshots of website
 
