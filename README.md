@@ -2,8 +2,8 @@
 A movie-recommendation website built using python django framework. [Website Link](https://cinematic2022.herokuapp.com)
 
 ### Prerequisites
-Git
-Python (version 3 or above)
+1. Git
+2. Python (version 3 or above)
 
 ### Setup
 
@@ -38,11 +38,11 @@ Then install the dependencies:
 ```sh
 (env)$ pip install -r requirements.txt
 ```
-if above command does not work due to difference in python versions try:
+if above command does not work due to difference in python versions try:</br>
 use `py -m pip install` in place of  `pip install`
 
-Note the `(env)` in front of the prompt. This indicates that this terminal
-session operates in a virtual environment set up.
+Note the `(env)` in front of the prompt. </br>
+This indicates that this terminal session operates in a virtual environment set up.</br>
 
 Once `pip` has finished downloading the dependencies:
 ```sh
@@ -53,7 +53,7 @@ Once `pip` has finished downloading the dependencies:
 A temp folder will be created -> we only need this for django `SECRET_KEY`.<br />
 Go to `temp/temp/settings.py` and copy the value of `SECRET_KEY`.<br />
 Now got to `../../Cinematic/settings.py` and replace the value of `SECRET_KEY` with the copied one.<br />
-Also change `<db_user_name>` with the name of postgresql database and `<db_password>` with password of postgresql database.
+Also change `<db_user_name>` with the name of postgresql database and `<db_password>` with password of postgresql database.</br>
 
 Now:
 ```sh
