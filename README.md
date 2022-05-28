@@ -38,11 +38,17 @@ Then install the dependencies:
 ```sh
 (env)$ pip install -r requirements.txt
 ```
+if above command does not work due to difference in python versions try:
+use `py -m pip install` in place of  `pip install`
+
 Note the `(env)` in front of the prompt. This indicates that this terminal
 session operates in a virtual environment set up.
 
 Once `pip` has finished downloading the dependencies:
 ```sh
-(env)$ cd project
-(env)$ python manage.py runserver
+(env)$ pip install django
+(env)$ django-admin startproject temp
 ```
+
+A temp folder will be created -> we only need this for django `SECRET_KEY`
+Go to temp/temp/settings.py and copy the value of `SECRET_KEY`
