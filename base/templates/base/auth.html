@@ -1,0 +1,51 @@
+{% extends 'main.html' %} {% block content %}
+
+<div class="auth-page">
+  <div class="auth-page__img"></div>
+  <div class="auth-page__form">
+    {%if page == 'login'%}
+    <form action="" method="post">
+      {%csrf_token%}
+      <input
+        type="text"
+        name="username"
+        placeholder="Unsername"
+        class="auth-page__form--input"
+      />
+      <input
+        type="password"
+        name="password"
+        placeholder="Enter Password"
+        class="auth-page__form--input"
+      />
+      <input type="submit" , value="Login" class="btn btn-white" />
+      <div class="auth-page__form--text">
+        <p>Haven't signed up yet?</p>
+        <a href="{% url 'register' %}">SignUp</a>
+      </div>
+    </form>
+    {%else%}
+    <form action="" method="post">
+      {%csrf_token%}
+      <input
+        type="text"
+        name="username"
+        placeholder="Unsername"
+        class="auth-page__form--input"
+      />
+      <input
+        type="password"
+        name="password"
+        placeholder="Enter Password"
+        class="auth-page__form--input"
+      />
+      <input type="submit" , value="Register" class="btn btn-white" />
+      <div class="auth-page__form--text">
+        <p>Already signed up?</p>
+        <a href="{% url 'login' %}">Login</a>
+      </div>
+    </form>
+    {%endif%}
+  </div>
+</div>
+{% endblock %}

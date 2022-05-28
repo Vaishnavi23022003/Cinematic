@@ -1,0 +1,86 @@
+{% extends 'main.html' %} {% block content %}
+
+<header
+  class="header"
+  style="background-image: url('http://image.tmdb.org/t/p/original{{poster}}');"
+>
+  <h1 class="heading-primary">
+    <span class="heading-primary--main">Welcome</span>
+    <span class="heading-primary--sub">Find your next perfect movie</span>
+    <span class="heading-primary--sub"
+      >Hundreds of movie recommendations available</span
+    >
+  </h1>
+  <div class="header__form">
+    <form action="{% url 'home' %}" method="get">
+      <input
+        type="text"
+        name="q"
+        placeholder="Search Movies"
+        autocomplete="off"
+        class="header__form--search"
+      />
+      <div class="header__form--submit">
+        <button type="submit" class="btn btn-pink">Search</button>
+      </div>
+    </form>
+  </div>
+</header>
+
+<section id="section-movies">
+  <h1 class="heading-primary">Recommendations for you</h1>
+
+  {% if not_avail%}
+  <p>No such movies</p>
+  {%else%}
+  <div class="movies__container">
+    {% for movie in movies%}
+
+    <div class="movies__container--card">
+      <a href="{% url 'movie' movie.movie_id %}">
+        <img
+          src="http://image.tmdb.org/t/p/original{{movie.poster}}"
+          class="movies__container--poster"
+        />
+        <div class="movies__container--title">
+          <p>{{movie.title}}</p>
+          <p>{{movie.genre}}</p>
+        </div>
+      </a>
+    </div>
+
+    {% endfor %}
+  </div>
+  {%endif%}
+</section>
+
+<section id="section-movies--watched">
+  <h1 class="heading-primary">Watch Again</h1>
+
+  <div class="movies__container">
+    {% for movie in watched%}
+
+    <div class="movies__container--card">
+      <a href="{% url 'movie' movie.movie_id %}">
+        <img
+          src="http://image.tmdb.org/t/p/original{{movie.poster}}"
+          class="movies__container--poster"
+        />
+        <div class="movies__container--title">
+          <p>{{movie.title}}</p>
+          <p>{{movie.genre}}</p>
+        </div>
+      </a>
+    </div>
+
+    {% endfor %}
+  </div>
+</section>
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"
+></script>
+
+{% endblock%}

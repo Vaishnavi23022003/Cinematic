@@ -1,0 +1,73 @@
+<div class="movie-header__form">
+    <form class="rating rating__old_rate">
+      {% if rating == 1 %}
+      <label>
+        <input type="radio" name="stars" value="1" checked />
+        <span class="icon">★</span>
+      </label>
+      {%elif rating == 2 %}
+      <label>
+        <input type="radio" name="stars" value="2" checked />
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+      </label>
+      {%elif rating == 3 %}
+      <label>
+        <input type="radio" name="stars" value="3" checked />
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+      </label>
+      {%elif rating == 4 %}
+      <label>
+        <input type="radio" name="stars" value="4" checked />
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+      </label>
+      {%elif rating == 5 %}
+      <label>
+        <input type="radio" name="stars" value="5" checked />
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+      </label>
+      {%endif%}
+    </form>
+    <form class="rating" method="post">
+      {% csrf_token %}
+      <label>
+        <input type="radio" name="stars" value="1" />
+        <span class="icon">★</span>
+      </label>
+      <label>
+        <input type="radio" name="stars" value="2" />
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+      </label>
+      <label>
+        <input type="radio" name="stars" value="3" />
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+      </label>
+      <label>
+        <input type="radio" name="stars" value="4" />
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+      </label>
+      <label>
+        <input type="radio" name="stars" value="5" />
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+      </label>
+    </form>
+  </div>

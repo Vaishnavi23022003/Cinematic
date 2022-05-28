@@ -1,0 +1,76 @@
+{% extends 'main.html' %} {% block content %}
+
+<header
+  class="header movie-header"
+  style="background-image: url('http://image.tmdb.org/t/p/original{{movie.backdrop}}');"
+>
+  <div class="movie-header__movie">
+    <div id="ytplayer"></div>
+    <img
+      src="http://image.tmdb.org/t/p/original{{movie.poster}}"
+      alt="movie poster"
+      class="movie-header__poster"
+    />
+    <div class="movie-header__info">
+      <h1>{{movie.title}}</h1>
+      {% include 'rating.html' %}
+      <h3 class="heading-primary--sub">{{movie.release_date}}</h3>
+      <h3 class="heading-primary--sub">{{movie.genre}}</h3>
+      <span href="#" class="btn btn-white movie-header__trailer">Trailer</span>
+    </div>
+  </div>
+  <div class="movie-header__overview">{{movie.overview}}</div>
+</header>
+
+<section id="section-movies">
+  <h1 class="heading-primary">Similar Movies</h1>
+
+  <div class="movies__container">
+    {% for movie in recommendations%}
+
+    <div class="movies__container--card">
+      <a href="{% url 'movie' movie.movie_id %}">
+        <img
+          src="http://image.tmdb.org/t/p/original{{movie.poster}}"
+          class="movies__container--poster"
+        />
+        <div class="movies__container--title">
+          <p>{{movie.title}}</p>
+          <p>{{movie.genre}}</p>
+        </div>
+      </a>
+    </div>
+
+    {% endfor %}
+  </div>
+</section>
+
+<section id="section-movies--watched">
+  <h1 class="heading-primary">Watch Again</h1>
+
+  <div class="movies__container">
+    {% for movie in watched%}
+
+    <div class="movies__container--card">
+      <a href="{% url 'movie' movie.movie_id %}">
+        <img
+          src="http://image.tmdb.org/t/p/original{{movie.poster}}"
+          class="movies__container--poster"
+        />
+        <div class="movies__container--title">
+          <p>{{movie.title}}</p>
+          <p>{{movie.genre}}</p>
+        </div>
+      </a>
+    </div>
+
+    {% endfor %}
+  </div>
+</section>
+
+<script type="text/javascript">
+  var youtube_id = "{{movie.youtube_id}}";
+  var post_url = "{% url 'movie' movie.movie_id %}";
+</script>
+
+{% endblock %}
