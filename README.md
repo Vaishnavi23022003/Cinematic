@@ -51,5 +51,11 @@ Once `pip` has finished downloading the dependencies:
 ```
 
 A temp folder will be created -> we only need this for django `SECRET_KEY`.<br />
-Go to temp/temp/settings.py and copy the value of `SECRET_KEY`.<br />
-Now got to ../../Cinematic/Cinematic/settings.py and replace the value of `SECRET_KEY` with the copied one.<br />
+Go to `temp/temp/settings.py` and copy the value of `SECRET_KEY`.<br />
+Now got to `../../Cinematic/settings.py` and replace the value of `SECRET_KEY` with the copied one.<br />
+
+Now:
+```sh
+(env)$ python manage.py runserver
+```
+And navigate to `http://127.0.0.1:8000`
