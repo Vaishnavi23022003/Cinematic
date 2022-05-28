@@ -53,6 +53,7 @@ Once `pip` has finished downloading the dependencies:
 A temp folder will be created -> we only need this for django `SECRET_KEY`.<br />
 Go to `temp/temp/settings.py` and copy the value of `SECRET_KEY`.<br />
 Now got to `../../Cinematic/settings.py` and replace the value of `SECRET_KEY` with the copied one.<br />
+Also change `<db_user_name>` with the name of postgresql database and `<db_password>` with password of postgresql database.
 
 Now:
 ```sh
