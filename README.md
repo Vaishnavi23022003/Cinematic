@@ -62,11 +62,6 @@ Now:
 And navigate to `http://127.0.0.1:8000`
 
 ---
-
-### Initial Database
-To see how worked on the initial dataset visit this [Link](https://github.com/Vaishnavi23022003/cinematic_data_preprocessing)
-
----
 ### Features
 1. **Recommendation** : When a user logins to the website, the following happens:<br />
   * if the user has rated more than 20 movies
@@ -94,6 +89,10 @@ Similar Movies Section</br>
 Watch Again Section</br>
 ![p](https://i.ibb.co/CBy0WLv/Cinematic-Firefox-Developer-Edition-28-05-2022-20-35-17.png)</br></br>
 
+---
+
+### Initial Database
+To see how worked I on the initial dataset visit this [Link](https://github.com/Vaishnavi23022003/cinematic_data_preprocessing).
 
 
 
