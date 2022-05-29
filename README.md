@@ -60,6 +60,7 @@ Now:
 (env)$ python manage.py runserver
 ```
 And navigate to `http://127.0.0.1:8000`
+
 ---
 ### Features
 1. **Recommendation** : When a user logins to the website, the following happens:<br />
