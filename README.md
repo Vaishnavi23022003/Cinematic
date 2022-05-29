@@ -60,7 +60,7 @@ Now:
 (env)$ python manage.py runserver
 ```
 And navigate to `http://127.0.0.1:8000`
-
+---
 ### Features
 1. **Recommendation** : When a user logins to the website, the following happens:<br />
   * if the user has rated more than 20 movies
@@ -72,7 +72,7 @@ And navigate to `http://127.0.0.1:8000`
 4. **Similar Movies** : The movie page also contains movies similar to the selected movie based on genre using [content based filtering](https://www.educative.io/edpresso/what-is-content-based-filtering)<br /><br />
 5. **Trailer** : When user clicks on the trailer button the app plays the trailer of that movie.<br /><br />
 6. **Watch Again** : A lot of times users like to watch movies again. So the app also has a Watch Again section <br/> where the movies are displayed in a sorted order on the basis of the rating given by the user in reverse order.<br /><br />
-
+---
 ### Screenshots of website
 
 The authentication page. </br>
