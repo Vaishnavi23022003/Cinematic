@@ -62,6 +62,11 @@ Now:
 And navigate to `http://127.0.0.1:8000`
 
 ---
+
+### Initial Database
+To see how worked on the initial dataset visit this [Link](https://github.com/Vaishnavi23022003/cinematic_data_preprocessing)
+
+---
 ### Features
 1. **Recommendation** : When a user logins to the website, the following happens:<br />
   * if the user has rated more than 20 movies
