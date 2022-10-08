@@ -1,5 +1,5 @@
 # Cinematic
-A movie-recommendation website built using python django framework. [Website Link](https://cinematic2022.herokuapp.com)
+A movie-recommendation website built using python django framework.
 
 ### Prerequisites
 1. Git
